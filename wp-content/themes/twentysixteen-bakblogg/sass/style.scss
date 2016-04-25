@@ -11,31 +11,50 @@
  Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
  Text Domain:  twenty-sixteen-child
 */
-/*** Over all ***/
-/*** Body Text ***/
-/***************************************/
-/*			GENERAL BODY               */
-/***************************************/
-body {
-  background-color: transparent; }
-  body #page {
-    margin: 0; }
+
+@import "_partials/variables";
+@import "_partials/overrides";
 
 /***************************************/
+
+/*			GENERAL BODY               */
+
+/***************************************/
+
+body{
+	background-color: $background;
+
+	#page{
+		margin: 0;
+	}
+}
+
+/***************************************/
+
 /*		    	HEADERS                */
+
 /***************************************/
+
+
+
+
 /***************************************/
+
 /*			BODY TEXT                  */
+
 /***************************************/
 html, body {
-  font-size: initial !important; }
+	font-size: $text-reset-size !important;
+}
 
-a,
-button,
-input,
-select,
-textarea,
-p {
-  color: #363d43; }
-
-/*# sourceMappingURL=style.css.map */
+//body{
+	a,
+	button,
+	input,
+	select,
+	textarea,
+	p {
+		//font-size: $text-size;
+		color: $text-color;
+	}
+//}
